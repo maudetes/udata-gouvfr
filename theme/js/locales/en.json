@@ -1,2 +1,128 @@
 {
+  "@@Temporal coverage": "",
+  "@@Frequency": "",
+  "@@Spatial coverage": "",
+  "@@Territorial coverage granularity": "",
+  "@@ressources": "",
+  "@@réutilisations": "",
+  "@@abonnés": "",
+  "@@Admin": "",
+  "@@Répondre à la discussion": "",
+  "@@Commentaire": "",
+  "@@Répondre en tant que": "",
+  "@@Valider": "",
+  "@@Erreur lors de l'envoi de la réponse": "",
+  "@@Discussion fermée": "",
+  "@@Permalien vers la discussion": "",
+  "@@Permalien vers le commentaire": "",
+  "@@messages": "",
+  "@@Répondre": "",
+  "@@La discussion a été close par": "",
+  "@@le": "",
+  "@@Vous devez être connecté pour commencer une discussion": {
+    "": ""
+  },
+  "@@Démarrer une nouvelle discussion": "",
+  "@@Nouvelle discussion": "",
+  "@@Titre": "",
+  "@@Message": "",
+  "@@Commenter en tant que": "",
+  "@@Vous consultez une discussion spécifique sur ce jeu de données": "",
+  "@@Voir toutes les discussions sur ce jeu de données": "",
+  "@@Trier par :": "",
+  "@@Début de discussion": "",
+  "@@Dernière réponse": "",
+  "@@Une erreur est survenue lors de la récupération des discussions": "",
+  "@@Une erreur est survenue lors de la récupération de la discussion ": "",
+  "@@Une erreur est survenue lors de la création de la discussion ": "",
+  "@@Aucun résultat ne correspond à votre recherche": "",
+  "@@du": "",
+  "@@au": "",
+  "Search": {
+    "": {
+      "": {
+        "": ""
+      }
+    }
+  },
+  "@@Recherchez des données": {
+    "": {
+      "": {
+        "": ""
+      }
+    }
+  },
+  "@@Jeux de données": "",
+  "@@Rechercher dans les réutilisations": "",
+  "@@Critères de recherche": "",
+  "@@Organisations": "",
+  "@@Chercher une organisation": {
+    "": {
+      "": {
+        "": ""
+      }
+    }
+  },
+  "@@Mots clés": "",
+  "@@Chercher un mot clé": {
+    "": {
+      "": {
+        "": ""
+      }
+    }
+  },
+  "@@Licenses": "",
+  "@@Chercher une licence": {
+    "": {
+      "": {
+        "": ""
+      }
+    }
+  },
+  "@@Formats": "",
+  "@@Chercher un format": {
+    "": {
+      "": {
+        "": ""
+      }
+    }
+  },
+  "@@Zone géographique": "",
+  "@@Chercher une zone": {
+    "": {
+      "": {
+        "": ""
+      }
+    }
+  },
+  "@@Granularité géographique": "",
+  "@@Chercher une granularité": {
+    "": {
+      "": {
+        "": ""
+      }
+    }
+  },
+  "@@Réinitialiser les filtres": "",
+  "@@Nous n’avons pas de jeu de données correspondant à votre requête": "",
+  "@@Vous pouvez essayer de réinitialiser les filtres pour agrandir votre champ de recherche": {
+    "": ""
+  },
+  "@@Recherchez des données, réutilisations, contributions": {
+    "": {
+      "": {
+        "": ""
+      }
+    }
+  },
+  "@@Rechercher dans tous les jeux de données": "",
+  "@@Voir tous les jeux de données": "",
+  "@@Rechercher dans les jeux de données": "",
+  "@@Rechercher dans toutes les réutilisations": "",
+  "@@Voir toutes les réutilisations": "",
+  "@@Nous n’avons pas de réutilisation correspondant à votre requête": "",
+  "@@Aucun résultat": {
+    "": ""
+  },
+  "@@followers": ""
 }
