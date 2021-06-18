@@ -25,8 +25,8 @@ You can also pass it a `value` prop that will populate the field.
         @input="_onChange"
         @keydown.delete="onDelete"
         ref="input"
-        :aria-label="placeholder || $t('Search...')"
-        :placeholder="placeholder || $t('Search...')"
+        :aria-label="placeholder || $t('@@Search...')"
+        :placeholder="placeholder || $t('@@Search...')"
       />
     </form>
   </section>
