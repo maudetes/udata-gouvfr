@@ -16,14 +16,82 @@ from udata import assets
 log = logging.getLogger(__name__)
 
 
-themes = Themes()
+RE_STRIP_TAGS = re.compile(r'</?(img|br|p|div|ul|li|ol)[^<>]*?>', re.I | re.M)
+
+# Add some html5 allowed attributes
+EXTRA_ATTRIBUTES = ('srcset', 'sizes')
+feedparser._HTMLSanitizer.acceptable_attributes.update(set(EXTRA_ATTRIBUTES))
+
+# Wordpress ATOM timeout
+WP_TIMEOUT = 5
+
+# Feed allowed enclosure type as thumbnails
+FEED_THUMBNAIL_MIMES = ('image/jpeg', 'image/png', 'image/webp')
 
 
-def get_current_theme():
-    if getattr(g, 'theme', None) is None:
-        g.theme = current_app.theme_manager.themes[current_app.config['THEME']]
-        g.theme.configure()
-    return g.theme
+gouvfr_menu = nav.Bar('gouvfr_menu', [
+    nav.Item(_('Data'), 'datasets.list'),
+    nav.Item(_('Reuses'), 'reuses.list'),
+    nav.Item(_('Organizations'), 'organizations.list'),
+    nav.Item(_('Dashboard'), 'site.dashboard'),
+    nav.Item(_('Documentation'), None, url='https://doc.data.gouv.fr', items=[
+        nav.Item(_("Platform's documentation"), None, url='https://doc.data.gouv.fr'),
+        nav.Item(_('Open data guides'), None, url='https://guides.etalab.gouv.fr'),
+    ]),
+    nav.Item(_('News'), 'posts.list'),
+    nav.Item(_('Support'), None, url='https://support.data.gouv.fr/'),
+])
+
+theme.menu(gouvfr_menu)
+
+footer_links = [
+    nav.Item(_('News'), 'posts.list'),
+    nav.Item(_('Reference Data'), 'gouvfr.spd'),
+    nav.Item(_('Licences'), 'gouvfr.licences'),
+    nav.Item(_('API'), None, url=current_app.config.get('API_DOC_EXTERNAL_LINK', '#')),
+    nav.Item(_('Terms of use'), 'site.terms'),
+    nav.Item(_('Tracking and privacy'), 'gouvfr.suivi'),
+]
+
+export_dataset_id = current_app.config.get('EXPORT_CSV_DATASET_ID')
+if export_dataset_id:
+    try:
+        export_dataset = Dataset.objects.get(id=export_dataset_id)
+    except Dataset.DoesNotExist:
+        pass
+    else:
+        export_url = url_for('datasets.show', dataset=export_dataset,
+                             _external=True)
+        footer_links.append(nav.Item(_('Data catalog'), None, url=export_url))
+
+footer_links.append(nav.Item('Thématiques à la une', 'gouvfr.show_page',
+                             args={'slug': 'donnees-cles-par-sujet'}))
+
+nav.Bar('gouvfr_footer', footer_links)
+
+NETWORK_LINKS = [
+    ('Gouvernement.fr', 'http://www.gouvernement.fr'),
+    ('France.fr', 'http://www.france.fr'),
+    ('Legifrance.gouv.fr', 'http://www.legifrance.gouv.fr'),
+    ('Service-public.fr', 'http://www.service-public.fr'),
+    ('Opendata France', 'http://opendatafrance.net'),
+    ('CADA.fr', 'http://www.cada.fr'),
+    ('Etalab.gouv.fr', 'https://www.etalab.gouv.fr'),
+]
+
+nav.Bar(
+    'gouvfr_network',
+    [nav.Item(label, label, url=url) for label, url in NETWORK_LINKS]
+)
+
+footer_support_links = [
+    nav.Item(_("Platform's documentation"), None, url='https://doc.data.gouv.fr'),
+    nav.Item(_('Open data guides'), None, url='https://guides.etalab.gouv.fr'),
+    nav.Item(_('Support'), None, url='https://support.data.gouv.fr/')
+]
+
+nav.Bar('support_network', footer_support_links)
+
 
 
 current = LocalProxy(get_current_theme)
