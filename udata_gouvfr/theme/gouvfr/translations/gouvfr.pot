@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: data.gouv@data.gouv.fr\n"
-"POT-Creation-Date: 2021-05-25 15:19+0200\n"
-"PO-Revision-Date: 2021-05-25 15:19+0200\n"
+"POT-Creation-Date: 2021-06-23 11:55+0200\n"
+"PO-Revision-Date: 2021-06-23 11:55+0200\n"
 "Last-Translator: Data.gouv.fr Team <data.gouv@data.gouv.fr>\n"
 "Language: en\n"
 "Language-Team: Data.gouv.fr Team <data.gouv@data.gouv.fr>\n"
@@ -19,225 +19,827 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.8.0\n"
 
-#: __init__.py:44
+#: __init__.py:46
 msgid "Data"
 msgstr ""
 
-#: __init__.py:45 templates/dataset/display.html:44 templates/footer.html:76
-#: templates/footer.html:78 templates/home.html:141
+#: __init__.py:47 templates/dataset/card_old.html:34
+#: templates/dataset/display.html:332 templates/dataset/display.html:378
+#: templates/dataset/display_old.html:426 templates/dataset/search-labels.html:28
+#: templates/footer_old.html:120 templates/footer_old.html:122
+#: templates/home.html:57 templates/organization/search-labels.html:9
+#: templates/organization/search-panel.html:6 templates/post/display.html:75
+#: templates/reuse/display.html:28 templates/reuse/list.html:6
+#: templates/reuse/list.html:16 templates/search.html:77 templates/search.html:86
+#: templates/search.html:104 templates/site/dashboard.html:22
+#: templates/topic/browse.html:15 templates/topic/datasets.html:34
+#: templates/topic/reuses.html:20 templates/user/following.html:16
+#: templates/user/list.html:32 templates/user/reuses.html:8
 msgid "Reuses"
 msgstr ""
 
-#: __init__.py:46 templates/header.html:96
+#: __init__.py:48 templates/dataset/search-panel.html:5
+#: templates/header_old.html:86 templates/home.html:59
+#: templates/organization/display.html:19 templates/organization/list.html:8
+#: templates/organization/list.html:18 templates/reuse/search-panel.html:4
+#: templates/search.html:100 templates/site/dashboard.html:24
+#: templates/user/base.html:92 templates/user/following.html:17
 msgid "Organizations"
 msgstr ""
 
-#: __init__.py:47
-msgid "Dashboard"
-msgstr ""
-
-#: __init__.py:48
-msgid "Documentation"
-msgstr ""
-
-#: __init__.py:49 __init__.py:99
-msgid "Platform's documentation"
-msgstr ""
-
-#: __init__.py:50 __init__.py:100
-msgid "Open data guides"
-msgstr ""
-
-#: __init__.py:52 __init__.py:59
+#: __init__.py:49 __init__.py:55 templates/post/display.html:17
 msgid "News"
 msgstr ""
 
-#: __init__.py:53 __init__.py:101 templates/footer.html:48
-msgid "Support"
+#: __init__.py:56
+msgid "Documentation"
 msgstr ""
 
-#: __init__.py:60
+#: __init__.py:57
 msgid "Reference Data"
 msgstr ""
 
-#: __init__.py:61
+#: __init__.py:58
 msgid "Licences"
 msgstr ""
 
-#: __init__.py:62
+#: __init__.py:59
 msgid "API"
 msgstr ""
 
-#: __init__.py:63
+#: __init__.py:60
 msgid "Terms of use"
 msgstr ""
 
-#: __init__.py:64
+#: __init__.py:61
 msgid "Tracking and privacy"
 msgstr ""
 
-#: __init__.py:76
+#: __init__.py:73
 msgid "Data catalog"
 msgstr ""
 
-#: templates/footer.html:9
-msgid "The Open Data"
+#: templates/apidoc.html:4
+msgid "API Documentation"
 msgstr ""
 
-#: templates/footer.html:26
-msgid "Topics"
+#: templates/apidoc.html:5
+#, python-format
+msgid "%(site)s API documentation"
 msgstr ""
 
-#: templates/footer.html:39
-msgid "Network"
+#: templates/apidoc.html:17
+msgid "The API documentation is available at"
 msgstr ""
 
-#: templates/footer.html:57
+#: templates/carousel.html:6 templates/home_old.html:34
+msgid "Best reuse cases"
+msgstr ""
+
+#: templates/embed-dataset.html:169
+msgid "Download from "
+msgstr ""
+
+#: templates/dataset/display.html:98 templates/dataset/display_old.html:209
+#: templates/embed-dataset.html:177
+msgid "Producer"
+msgstr ""
+
+#: templates/embed-dataset.html:183
+msgid "Uploader"
+msgstr ""
+
+#: templates/embed-dataset.html:205
+msgid "Add to your own website"
+msgstr ""
+
+#: templates/embed-dataset.html:206
+msgid "Close"
+msgstr ""
+
+#: templates/embed-dataset.html:206
+msgid "Embed"
+msgstr ""
+
+#: templates/dataset/card_old.html:46 templates/dataset/display.html:153
+#: templates/dataset/display_old.html:267 templates/dataset/search-labels.html:15
+#: templates/dataset/search-panel.html:13 templates/dataset/search-result.html:38
+#: templates/embed-dataset.html:209
+msgid "Temporal coverage"
+msgstr ""
+
+#: templates/embed-dataset.html:213
+msgid "to"
+msgstr ""
+
+#: templates/embed-dataset.html:221
+msgid "Granularity"
+msgstr ""
+
+#: templates/embed-dataset.html:225
+msgid "Territory"
+msgstr ""
+
+#: templates/dataset/display.html:160 templates/dataset/display_old.html:276
+#: templates/dataset/search-result.html:46 templates/embed-dataset.html:232
+msgid "Frequency"
+msgstr ""
+
+#: templates/embed-dataset.html:237 templates/territories/commune.html:23
+#: templates/territories/departement.html:22 templates/territories/region.html:21
+msgid "License:"
+msgstr ""
+
+#: templates/footer.html:53 templates/footer_old.html:82
 msgid "Go to Etalab’s blog"
 msgstr ""
 
-#: templates/footer.html:67
-msgid "Feeds"
+#: templates/footer.html:58
+msgid "@@Une mission de la DINUM"
 msgstr ""
 
-#: templates/footer.html:71 templates/footer.html:73 templates/home.html:69
-msgid "Datasets"
+#: templates/footer.html:59
+msgid "@@DINUM website"
 msgstr ""
 
-#: templates/footer.html:83
+#: templates/footer.html:64 templates/footer_old.html:127
 msgid "Open-source engine"
 msgstr ""
 
-#: templates/footer.html:84 templates/footer.html:87
+#: templates/footer.html:67 templates/footer.html:73 templates/footer_old.html:129
+#: templates/footer_old.html:134
 msgid "Deployed version"
 msgstr ""
 
-#: templates/footer.html:86
+#: templates/footer.html:70 templates/footer_old.html:132
 msgid "Data.gouv.fr extension"
 msgstr ""
 
-#: templates/footer.html:89
+#: templates/footer.html:85 templates/header.html:14 templates/header.html:34
+msgid "@@Retourner à l'accueil de data.gouv.fr"
+msgstr ""
+
+#: templates/footer.html:99
+msgid "@@Lang selector"
+msgstr ""
+
+#: templates/footer_old.html:9
+msgid "The Open Data"
+msgstr ""
+
+#: templates/dataset/explore.html:49 templates/footer_old.html:26
+msgid "Topics"
+msgstr ""
+
+#: templates/footer_old.html:39
+msgid "Network"
+msgstr ""
+
+#: templates/footer_old.html:48
+msgid "Contact Us"
+msgstr ""
+
+#: templates/footer_old.html:76
+msgid "You can contact us at "
+msgstr ""
+
+#: templates/footer_old.html:111
+msgid "Feeds"
+msgstr ""
+
+#: templates/dataset/display.html:32 templates/dataset/display_old.html:31
+#: templates/dataset/explore.html:8 templates/dataset/followers.html:4
+#: templates/dataset/list.html:18 templates/footer_old.html:115
+#: templates/footer_old.html:117 templates/home.html:55
+#: templates/organization/search-labels.html:6
+#: templates/organization/search-panel.html:4 templates/post/display.html:60
+#: templates/reuse/search-labels.html:12 templates/reuse/search-panel.html:8
+#: templates/search.html:71 templates/search.html:103
+#: templates/site/dashboard.html:20 templates/topic/browse.html:9
+#: templates/topic/datasets.html:20 templates/topic/reuses.html:34
+#: templates/user/datasets.html:8 templates/user/following.html:15
+#: templates/user/list.html:31
+msgid "Datasets"
+msgstr ""
+
+#: templates/footer_old.html:136
 msgid "Back to top"
-msgstr ""
-
-#: templates/forum.html:4
-msgid "Latest forum discussions"
-msgstr ""
-
-#: templates/forum.html:13
-msgid "Title"
-msgstr ""
-
-#: templates/forum.html:14
-msgid "Users"
-msgstr ""
-
-#: templates/forum.html:15
-msgid "Last post"
-msgstr ""
-
-#: templates/forum.html:16
-msgid "Replies"
 msgstr ""
 
 #: templates/header.html:4
 msgid ""
 "Internet Explorer 8 and below are not anymore supported. Please upgrade or "
-"change your browser to access the website."
+"change your browser to\n"
+"            access the website."
 msgstr ""
 
-#: templates/header.html:4
-msgid "More information →"
+#: templates/header.html:6 templates/header_old.html:4
+msgid "More information →"
 msgstr ""
 
-#: templates/header.html:12
-msgid "Due to security reasons, the creation of new content is currently disabled."
+#: templates/header.html:19 templates/header.html:77 templates/header.html:78
+msgid "@@Rechercher"
 msgstr ""
 
-#: templates/header.html:30
-msgid "Toggle navigation"
+#: templates/header.html:24
+msgid "@@Open menu"
 msgstr ""
 
-#: templates/header.html:36
-msgid "Open platform for French public data"
+#: templates/header.html:28
+msgid "@@Close menu"
 msgstr ""
 
-#: templates/header.html:92
-msgid "Public profile"
+#: templates/header.html:29
+msgid "@@Fermer"
 msgstr ""
 
-#: templates/header.html:111
+#: templates/header.html:46 templates/header_old.html:101
 msgid "Administration"
 msgstr ""
 
-#: templates/header.html:118
+#: templates/header.html:49 templates/header_old.html:108
 msgid "Logout"
 msgstr ""
 
-#: templates/header.html:125 templates/header.html:128
+#: templates/header.html:53
+msgid "@@Sign In"
+msgstr ""
+
+#: templates/header.html:53
+msgid "@@Se connecter"
+msgstr ""
+
+#: templates/header.html:56
+msgid "@@Register"
+msgstr ""
+
+#: templates/header.html:56
+msgid "@@S'enregistrer"
+msgstr ""
+
+#: templates/header_old.html:4
+msgid ""
+"Internet Explorer 8 and below are not anymore supported. Please upgrade or "
+"change your browser to access the website."
+msgstr ""
+
+#: templates/header_old.html:20
+msgid "Toggle navigation"
+msgstr ""
+
+#: templates/header_old.html:26
+msgid "Open platform for French public data"
+msgstr ""
+
+#: templates/header_old.html:82
+msgid "Public profile"
+msgstr ""
+
+#: templates/header_old.html:115 templates/header_old.html:118
+#: templates/territories/territory.html:35
 msgid "Sign In / Register"
 msgstr ""
 
-#: templates/home.html:89 templates/home.html:162
+#: templates/api/oauth_error.html:13 templates/errors/base.html:18
+#: templates/home.html:4 templates/home_old.html:4
+#: templates/macros/breadcrumb.html:16 templates/macros/breadcrumb.html:17
+#: templates/macros/breadcrumb_old.html:16 templates/macros/metadata.html:2
+msgid "Home"
+msgstr ""
+
+#: templates/home.html:5 templates/home_old.html:5
+#, python-format
+msgid "%(site)s home"
+msgstr ""
+
+#: templates/home.html:6 templates/home_old.html:6
+msgid "home"
+msgstr ""
+
+#: templates/home.html:18
+msgid "@@Plateforme ouverte des données publiques Françaises"
+msgstr ""
+
+#: templates/home.html:20
+msgid "@@Thématiques à la une"
+msgstr ""
+
+#: templates/home.html:22
+msgid "@@Données de"
+msgstr ""
+
+#: templates/home.html:23
+msgid "@@Référence"
+msgstr ""
+
+#: templates/home.html:27
+msgid "@@Données relatives à la"
+msgstr ""
+
+#: templates/home.html:28
+msgid "@@COVID-19"
+msgstr ""
+
+#: templates/home.html:32
+msgid "@@Données relatives aux"
+msgstr ""
+
+#: templates/home.html:33
+msgid "@@Comptes Publics"
+msgstr ""
+
+#: templates/home.html:38
+msgid "@@Actualités"
+msgstr ""
+
+#: templates/home.html:46
+msgid "@@Toutes les actualités"
+msgstr ""
+
+#: templates/dataset/display.html:255 templates/dataset/display_old.html:119
+#: templates/home.html:56 templates/search.html:72 templates/site/dashboard.html:21
+msgid "Resources"
+msgstr ""
+
+#: templates/home.html:58 templates/site/dashboard.html:23
+#: templates/user/base.html:14 templates/user/following.html:18
+#: templates/user/list.html:8 templates/user/list.html:18
+msgid "Users"
+msgstr ""
+
+#: templates/dataset/display.html:335 templates/dataset/display.html:404
+#: templates/dataset/display_old.html:451 templates/home.html:60
+#: templates/post/display.html:137 templates/reuse/display.html:182
+#: templates/site/dashboard.html:25
+msgid "Discussions"
+msgstr ""
+
+#: templates/home.html:68
+msgid "@@c’est"
+msgstr ""
+
+#: templates/home.html:85 templates/home_old.html:108
+#: templates/topic/display.html:31
+msgid "Featured datasets"
+msgstr ""
+
+#: templates/home.html:86 templates/home_old.html:109
+#: templates/topic/display.html:32
+msgid "Latest datasets"
+msgstr ""
+
+#: templates/home.html:87
+msgid "@@Jeux de données de référence"
+msgstr ""
+
+#: templates/home.html:95
+msgid "@@Données"
+msgstr ""
+
+#: templates/dataset/explore.html:53 templates/home.html:103
+#: templates/home_old.html:145 templates/topic/display.html:68
 msgid "See more"
 msgstr ""
 
-#: templates/home.html:116
+#: templates/home.html:127
+msgid "@@Selection Etalab"
+msgstr ""
+
+#: templates/home.html:128 templates/home.html:144 templates/home_old.html:52
+#: templates/home_old.html:53 templates/topic/display.html:13
+msgid "Latest reuses"
+msgstr ""
+
+#: templates/home.html:136
+msgid "Réutilisations"
+msgstr ""
+
+#: templates/home.html:145
+msgid "Voir plus"
+msgstr ""
+
+#: templates/home_old.html:91
 msgid "News in data"
 msgstr ""
 
-#: templates/home.html:177
+#: templates/home_old.html:164
 msgid "The blog"
 msgstr ""
 
-#: templates/home.html:199
+#: templates/home_old.html:184
 msgid "more"
 msgstr ""
 
-#: templates/subnav-large.html:33
-msgid "Share, improve and reuse public data"
+#: templates/metrics.html:4 templates/metrics.html:10
+msgid "Metrics"
 msgstr ""
 
-#: templates/subnav-large.html:37 templates/subnav-large.html:40
-msgid "Contribute!"
+#: templates/metrics.html:5
+msgid "Site metrics"
 msgstr ""
 
-#: templates/subnav-small.html:10
-msgid "Search in datasets"
+#: templates/metrics.html:6 templates/site/dashboard.html:6
+msgid "metrics"
 msgstr ""
 
-#: templates/subnav-small.html:13
-msgid "Search in this "
+#: templates/participez/participez.html:17 templates/publish-action-modal.html:11
+msgid "Publish a dataset"
 msgstr ""
 
-#: templates/subnav-small.html:16
+#: templates/publish-action-modal.html:15
+msgid "Contribute and add a new dataset to this site catalog."
+msgstr ""
+
+#: templates/participez/participez.html:21 templates/publish-action-modal.html:25
+msgid "Publish a reuse"
+msgstr ""
+
+#: templates/publish-action-modal.html:29
+msgid "Contribute and add a new reuse to this site catalog."
+msgstr ""
+
+#: templates/participez/participez.html:8 templates/publish-action-modal.html:39
+msgid "Create or find your organization"
+msgstr ""
+
+#: templates/publish-action-modal.html:43
+msgid "You can create a new organization or find yours."
+msgstr ""
+
+#: templates/raw.html:20
+msgid "Recent datasets"
+msgstr ""
+
+#: templates/raw.html:23
+msgid "Recent reuses"
+msgstr ""
+
+#: templates/macros/search.html:224 templates/post/subnav.html:13
+#: templates/search.html:9
 msgid "Search"
 msgstr ""
 
-#: templates/dataset/display.html:3 templates/reuse/display.html:3
+#: templates/search.html:10
+#, python-format
+msgid "%(site)s search"
+msgstr ""
+
+#: templates/dataset/explore.html:10 templates/dataset/list.html:20
+#: templates/organization/list.html:10 templates/reuse/list.html:8
+#: templates/search.html:11 templates/topic/datasets.html:9
+#: templates/topic/reuses.html:9 templates/user/list.html:10
+msgid "search"
+msgstr ""
+
+#: templates/organization/card.html:21 templates/organization/search-result.html:24
+#: templates/search.html:28 templates/user/base.html:79
+#, python-format
+msgid "%(num)d dataset"
+msgid_plural "%(num)d datasets"
+msgstr[0] ""
+msgstr[1] ""
+
+#: templates/organization/card.html:27 templates/organization/search-result.html:30
+#: templates/search.html:35 templates/user/base.html:85
+#, python-format
+msgid "%(num)d reuse"
+msgid_plural "%(num)d reuses"
+msgstr[0] ""
+msgstr[1] ""
+
+#: templates/search.html:42
+#, python-format
+msgid "%(num)d organization"
+msgid_plural "%(num)d organizations"
+msgstr[0] ""
+msgstr[1] ""
+
+#: templates/search.html:50
+#, python-format
+msgid "Territory: %(name)s"
+msgid_plural "%(num)d territories"
+msgstr[0] ""
+msgstr[1] ""
+
+#: templates/dataset/search-labels.html:6 templates/reuse/search-labels.html:9
+#: templates/search.html:57
+msgid "Tag"
+msgstr ""
+
+#: templates/dataset/search-labels.html:12
+#: templates/organization/search-labels.html:3 templates/search.html:60
+msgid "Badge"
+msgstr ""
+
+#: templates/mail/discussion_closed.html:26 templates/mail/issue_closed.html:26
+#: templates/mail/new_discussion.html:25
+#: templates/mail/new_discussion_comment.html:26 templates/mail/new_issue.html:25
+#: templates/mail/new_issue_comment.html:26 templates/search.html:74
+#: templates/search.html:88 templates/topic/datasets.html:31
+#: templates/topic/reuses.html:31
+msgid "Title"
+msgstr ""
+
+#: templates/dataset/display.html:166 templates/dataset/display.html:212
+#: templates/dataset/display_old.html:284 templates/search.html:75
+#: templates/search.html:89 templates/topic/datasets.html:32
+#: templates/topic/reuses.html:32
+msgid "Creation date"
+msgstr ""
+
+#: templates/search.html:76 templates/search.html:90
+#: templates/topic/datasets.html:33 templates/topic/reuses.html:33
+msgid "Last modification date"
+msgstr ""
+
+#: templates/dataset/card_old.html:38 templates/organization/card.html:30
+#: templates/reuse/card_old.html:36 templates/search.html:78
+#: templates/search.html:92 templates/topic/datasets.html:35
+msgid "Stars"
+msgstr ""
+
+#: templates/search.html:91
+msgid "Datasets used"
+msgstr ""
+
+#: templates/api/admin.html:10 templates/search.html:102
+#: templates/user/list.html:34
+msgid "Name"
+msgstr ""
+
+#: templates/dataset/followers.html:6 templates/dataset/search-labels.html:31
+#: templates/dataset/search-panel.html:19
+#: templates/organization/search-labels.html:12
+#: templates/organization/search-panel.html:7 templates/reuse/search-labels.html:15
+#: templates/reuse/search-panel.html:9 templates/search.html:105
+#: templates/topic/reuses.html:35 templates/user/followers.html:7
+#: templates/user/list.html:33
+msgid "Followers"
+msgstr ""
+
+#: templates/search.html:117
+msgid "No results found, try to be less specific."
+msgstr ""
+
+#: templates/search.html:164 templates/search.html:187
+#: templates/topic/browse.html:39 templates/topic/browse.html:59
+msgid "No results found"
+msgstr ""
+
+#: templates/terms.html:4 templates/terms.html:5
+msgid "Terms"
+msgstr ""
+
+#: templates/terms.html:7
+msgid "terms"
+msgstr ""
+
+#: templates/api/admin.html:11
+msgid "Maintainer"
+msgstr ""
+
+#: templates/api/admin.html:31 templates/dataset/display_old.html:171
+#: templates/post/display.html:95 templates/user/base.html:23
+msgid "Edit"
+msgstr ""
+
+#: templates/api/admin.html:34
+msgid "Delete"
+msgstr ""
+
+#: templates/api/admin.html:42
+msgid "No OAuth clients"
+msgstr ""
+
+#: templates/api/admin.html:53
+msgid "Add a client"
+msgstr ""
+
+#: templates/api/oauth_authorize.html:4
+msgid "External application authorization"
+msgstr ""
+
+#: templates/api/oauth_authorize.html:14
+#, python-format
+msgid "%(app)s want to access your %(site)s account."
+msgstr ""
+
+#: templates/api/oauth_authorize.html:26 templates/dataset/display_old.html:347
+#: templates/dataset/display_old.html:349
+msgid "Details"
+msgstr ""
+
+#: templates/api/oauth_authorize.html:36
+msgid "Access your profile"
+msgstr ""
+
+#: templates/api/oauth_authorize.html:37
+msgid "Read your profile, the orgnization you belong to, your publications"
+msgstr ""
+
+#: templates/api/oauth_authorize.html:45
+msgid "Publish data"
+msgstr ""
+
+#: templates/api/oauth_authorize.html:46
+msgid "Publish datasets, reuses, follow or unfollow"
+msgstr ""
+
+#: templates/api/oauth_authorize.html:56
+msgid "Accept"
+msgstr ""
+
+#: templates/api/oauth_authorize.html:58
+msgid "Refuse"
+msgstr ""
+
+#: templates/api/oauth_error.html:8
+msgid "OAuth Authentication Error"
+msgstr ""
+
+#: templates/dataset/add-reuse-card.html:5 templates/dataset/display.html:398
+msgid "Add a reuse"
+msgstr ""
+
+#: templates/dataset/card.html:32 templates/dataset/search-result.html:69
+msgid "@@ressources"
+msgstr ""
+
+#: templates/dataset/card.html:33 templates/dataset/search-result.html:71
+msgid "@@réutilisations"
+msgstr ""
+
+#: templates/dataset/card_old.html:29
+msgid "Number of resources"
+msgstr ""
+
+#: templates/dataset/card_old.html:54 templates/dataset/display.html:190
+#: templates/dataset/display_old.html:316
+msgid "Territorial coverage"
+msgstr ""
+
+#: templates/dataset/card_old.html:62 templates/dataset/display.html:184
+#: templates/dataset/display_old.html:308 templates/dataset/search-result.html:61
+msgid "Territorial coverage granularity"
+msgstr ""
+
+#: templates/dataset/display.html:11 templates/dataset/display_old.html:10
+msgid "dataset"
+msgstr ""
+
+#: templates/dataset/display.html:19 templates/dataset/display_old.html:18
+#: templates/reuse/display.html:19
 #, python-format
 msgid "Explore with %(certifier)s"
 msgstr ""
 
-#: templates/dataset/display.html:12
-msgid "Community contributions"
+#: templates/dataset/display.html:49 templates/dataset/display_old.html:91
+msgid "This dataset is private and will not be visible by other users"
 msgstr ""
 
-#: templates/dataset/display.html:19
+#: templates/dataset/display.html:49 templates/dataset/display_old.html:92
+#: templates/dataset/display_old.html:93 templates/reuse/display.html:42
+msgid "Private"
+msgstr ""
+
+#: templates/dataset/display.html:54 templates/dataset/display_old.html:97
+msgid "This dataset has been deleted. This will be permanent in the next 24 hours"
+msgstr ""
+
+#: templates/dataset/display.html:54 templates/dataset/display_old.html:98
+#: templates/dataset/display_old.html:99
+msgid "Deleted"
+msgstr ""
+
+#: templates/dataset/display.html:58 templates/dataset/display_old.html:45
+msgid ""
+"This dataset has been archived automatically because it has been deleted from"
+" the remote platform."
+msgstr ""
+
+#: templates/dataset/display.html:60 templates/dataset/display_old.html:47
+#: templates/dataset/display_old.html:103
+msgid "This dataset has been archived."
+msgstr ""
+
+#: templates/dataset/display.html:62 templates/dataset/display_old.html:104
+#: templates/dataset/display_old.html:105
+msgid "Archived"
+msgstr ""
+
+#: templates/dataset/display.html:76 templates/dataset/display_old.html:68
+msgid "This dataset comes from a certified public service"
+msgstr ""
+
+#: templates/dataset/display.html:81
+#, python-format
+msgid ""
+"\n"
+"            This dataset has been published on the initiative and under the "
+"responsibility of <a href=\"%(url)s\"\n"
+"                title=\"%(author)s\">%(author)s</a><br />\n"
+"            Published on %(date)s and updated on %(update)s\n"
+"            "
+msgstr ""
+
+#: templates/dataset/display.html:101 templates/dataset/display_old.html:218
+msgid "Author"
+msgstr ""
+
+#: templates/dataset/display.html:104 templates/dataset/display.html:128
+#: templates/dataset/display_old.html:230
+msgid "Informations"
+msgstr ""
+
+#: templates/dataset/display.html:106 templates/dataset/display.html:203
+msgid "@@Extras"
+msgstr ""
+
+#: templates/dataset/display.html:110 templates/dataset/display.html:329
+#: templates/dataset/display.html:345 templates/dataset/display_old.html:403
 msgid "Community resources"
 msgstr ""
 
-#: templates/dataset/display.html:31
-msgid "Add a community resource"
+#: templates/dataset/display.html:133 templates/dataset/display_old.html:248
+#: templates/dataset/search-labels.html:9
+msgid "License"
 msgstr ""
 
-#: templates/dataset/display.html:39
+#: templates/dataset/display.html:145 templates/dataset/display.html:146
+#: templates/dataset/display_old.html:259 templates/dataset/display_old.html:260
+msgid "Remote source"
+msgstr ""
+
+#: templates/dataset/display.html:171 templates/dataset/display.html:217
+#: templates/dataset/display_old.html:291
+msgid "Modification date"
+msgstr ""
+
+#: templates/dataset/display.html:176 templates/dataset/display_old.html:298
+msgid "Latest resource update"
+msgstr ""
+
+#: templates/dataset/display.html:207
+msgid "ID"
+msgstr ""
+
+#: templates/dataset/display.html:223 templates/dataset/search-panel.html:10
+#: templates/reuse/search-panel.html:7
+msgid "Tags"
+msgstr ""
+
+#: templates/dataset/display.html:236 templates/dataset/display_old.html:338
+msgid "Suggest a tag with a new discussion thread"
+msgstr ""
+
+#: templates/dataset/display.html:238 templates/dataset/display_old.html:340
+msgid "Suggest a tag"
+msgstr ""
+
+#: templates/dataset/display.html:257 templates/dataset/display_old.html:122
+msgid "See also: community resources"
+msgstr ""
+
+#: templates/dataset/display.html:275 templates/dataset/display_old.html:143
+#, python-format
+msgid "See the %(nb)d resources of type %(type)s"
+msgstr ""
+
+#: templates/dataset/display.html:285 templates/dataset/display_old.html:148
+msgid "No resources"
+msgstr ""
+
+#: templates/dataset/display.html:291
+msgid "Actions"
+msgstr ""
+
+#: templates/dataset/display.html:296 templates/organization/display.html:169
+#: templates/reuse/display.html:161
+msgid "Modifier des informations"
+msgstr ""
+
+#: templates/dataset/display.html:301 templates/dataset/display_old.html:183
+#: templates/organization/producer-panel.html:19
+#: templates/organization/sidebar-producer.html:31 templates/reuse/display.html:166
+#: templates/user/sidebar-user.html:23
+msgid "Contact the producer"
+msgstr ""
+
+#: templates/dataset/display.html:327 templates/dataset/display_old.html:396
+msgid "Community contributions"
+msgstr ""
+
+#: templates/dataset/display.html:349 templates/dataset/display_old.html:421
 msgid ""
 "You have built a more comprehensive database than those presented here? This "
 "is the time to share it!"
 msgstr ""
 
-#: templates/dataset/display.html:64
+#: templates/dataset/display.html:370 templates/dataset/display_old.html:414
+msgid "Add a community resource"
+msgstr ""
+
+#: templates/dataset/display.html:381 templates/dataset/display_old.html:444
 msgid ""
 "You reused these data and published an article, a computer graphics, or an "
 "application?\n"
@@ -246,12 +848,334 @@ msgid ""
 "visibility."
 msgstr ""
 
-#: templates/dataset/display.html:71
-msgid "Discussions"
+#: templates/dataset/display.html:407 templates/dataset/display_old.html:460
+#: templates/reuse/display.html:186
+msgid "Discussion between the organization and the community about this dataset."
 msgstr ""
 
-#: templates/dataset/display.html:80
-msgid "Discussion between the organization and the community about this dataset."
+#: templates/dataset/display_old.html:73
+#, python-format
+msgid ""
+"This dataset has been published on %(date)s and updated on %(update)s on the "
+"initiative and under the responsibility of <a href=\"%(url)s\" "
+"title=\"%(author)s\">%(author)s</a>"
+msgstr ""
+
+#: templates/dataset/display_old.html:84
+msgid "See all datasets with that badge."
+msgstr ""
+
+#: templates/dataset/display_old.html:156
+msgid "Add a resource"
+msgstr ""
+
+#: templates/dataset/display_old.html:237 templates/dataset/search-panel.html:8
+#: templates/organization/search-panel.html:5 templates/reuse/search-panel.html:5
+msgid "Badges"
+msgstr ""
+
+#: templates/dataset/display_old.html:359 templates/dataset/search-labels.html:18
+#: templates/dataset/search-panel.html:15 templates/dataset/search-result.html:54
+msgid "Spatial coverage"
+msgstr ""
+
+#: templates/dataset/display_old.html:377
+msgid "Territories"
+msgstr ""
+
+#: templates/dataset/explore.html:9 templates/dataset/list.html:19
+#, python-format
+msgid "%(site)s dataset search"
+msgstr ""
+
+#: templates/dataset/explore.html:10 templates/dataset/list.html:20
+#: templates/topic/datasets.html:9
+msgid "datasets"
+msgstr ""
+
+#: templates/dataset/explore.html:37
+msgid "@@Plateforme ouverte des données publiques françaises"
+msgstr ""
+
+#: templates/dataset/followers.html:13 templates/organization/search-result.html:36
+#: templates/user/base.html:67 templates/user/followers.html:12
+#, python-format
+msgid "%(num)d follower"
+msgid_plural "%(num)d followers"
+msgstr[0] ""
+msgstr[1] ""
+
+#: templates/dataset/list.html:32 templates/reuse/list.html:41
+msgid "@@Search..."
+msgstr ""
+
+#: templates/dataset/list.html:36 templates/organization/display.html:55
+#: templates/organization/display.html:87
+msgid "@@Jeux de données"
+msgstr ""
+
+#: templates/dataset/list.html:38
+msgid "@@Rechercher dans les réutilisations"
+msgstr ""
+
+#: templates/dataset/search-labels.html:3 templates/reuse/search-labels.html:3
+msgid "Organization"
+msgstr ""
+
+#: templates/dataset/search-labels.html:21
+msgid "Spatial granularity"
+msgstr ""
+
+#: templates/dataset/search-labels.html:24
+msgid "Format"
+msgstr ""
+
+#: templates/dataset/search-labels.html:25
+msgid "Resource type"
+msgstr ""
+
+#: templates/dataset/search-panel.html:11
+msgid "Licenses"
+msgstr ""
+
+#: templates/dataset/search-panel.html:16
+msgid "Territorial granularity"
+msgstr ""
+
+#: templates/dataset/search-panel.html:17
+msgid "Formats"
+msgstr ""
+
+#: templates/dataset/search-panel.html:18
+msgid "Known reuses"
+msgstr ""
+
+#: templates/dataset/search-result.html:74
+msgid "@@abonnés"
+msgstr ""
+
+#: templates/dataset/resource/card.html:10
+msgid "@@Edit button"
+msgstr ""
+
+#: templates/dataset/resource/card.html:16
+msgid "@@téléchargements"
+msgstr ""
+
+#: templates/dataset/resource/card.html:18
+#: templates/dataset/resource/card_old.html:14
+msgid "Nameless resource"
+msgstr ""
+
+#: templates/dataset/resource/card.html:28
+msgid "@@Voir plus de détails"
+msgstr ""
+
+#: templates/dataset/resource/card.html:35
+#: templates/dataset/resource/card_old.html:61
+msgid "Copy permalink to clipboard"
+msgstr ""
+
+#: templates/dataset/resource/card.html:40
+msgid "@@Resource link"
+msgstr ""
+
+#: templates/dataset/resource/card.html:42
+msgid "@@Download resource"
+msgstr ""
+
+#: templates/dataset/resource/card.html:65
+msgid "@@URL"
+msgstr ""
+
+#: templates/dataset/resource/card.html:69
+msgid "@@URL stable"
+msgstr ""
+
+#: templates/dataset/resource/card.html:73 templates/reuse/display.html:104
+msgid "@@Type"
+msgstr ""
+
+#: templates/dataset/resource/card.html:77
+msgid "@@Type MIME"
+msgstr ""
+
+#: templates/dataset/resource/card.html:87
+msgid "@@Créée le"
+msgstr ""
+
+#: templates/dataset/resource/card.html:91
+msgid "@@Modifiée le"
+msgstr ""
+
+#: templates/dataset/resource/card.html:95
+msgid "@@Publiée le"
+msgstr ""
+
+#: templates/dataset/resource/card_old.html:21
+msgid "File informations"
+msgstr ""
+
+#: templates/dataset/resource/card_old.html:28
+msgid "Download count"
+msgstr ""
+
+#: templates/dataset/resource/card_old.html:53
+msgid "Preview"
+msgstr ""
+
+#: templates/dataset/resource/card_old.html:57
+msgid "Visit"
+msgstr ""
+
+#: templates/dataset/resource/card_old.html:59
+msgid "Download"
+msgstr ""
+
+#: templates/dataset/resource/card_old.html:70
+msgid "Edit this resource"
+msgstr ""
+
+#: templates/errors/400.html:3
+msgid "Bad request"
+msgstr ""
+
+#: templates/errors/400.html:8 templates/errors/500.html:8
+msgid "The error identifier is {id}"
+msgstr ""
+
+#: templates/errors/403.html:3
+msgid "Forbidden"
+msgstr ""
+
+#: templates/errors/403.html:6
+msgid "You are not allowed to display this page."
+msgstr ""
+
+#: templates/errors/404.html:3 templates/errors/410.html:3
+msgid "Page Not Found"
+msgstr ""
+
+#: templates/errors/404.html:6
+msgid "The page you're looking for could not be found."
+msgstr ""
+
+#: templates/errors/410.html:6
+msgid "The page you're looking has been deleted."
+msgstr ""
+
+#: templates/errors/500.html:3
+msgid "Internal server error"
+msgstr ""
+
+#: templates/errors/500.html:6
+msgid ""
+"The server encountered an internal error and was unable to complete your "
+"request. Either the server is overloaded or there is an error in the "
+"application."
+msgstr ""
+
+#: templates/errors/base.html:11
+#, python-format
+msgid "Error %(code)s"
+msgstr ""
+
+#: templates/follow/follower-card.html:6
+#, python-format
+msgid "Following since %(date)s"
+msgstr ""
+
+#: templates/macros/certified.html:4
+#, python-format
+msgid "The identity of this public service is certified by %(certifier)s"
+msgstr ""
+
+#: templates/macros/forms_old.html:106
+msgid "required fields"
+msgstr ""
+
+#: templates/macros/metadata.html:3
+msgid "Share, improve and reuse public data"
+msgstr ""
+
+#: templates/macros/paginator.html:10
+msgid "First page"
+msgstr ""
+
+#: templates/macros/paginator.html:17
+msgid "Previous page"
+msgstr ""
+
+#: templates/macros/paginator.html:29
+msgid "Next page"
+msgstr ""
+
+#: templates/macros/paginator.html:35
+msgid "Last page"
+msgstr ""
+
+#: templates/macros/search.html:17
+msgid "Sort by"
+msgstr ""
+
+#: templates/macros/search.html:21
+msgid "Relevance"
+msgstr ""
+
+#: templates/macros/search.html:43
+msgid "Ascending"
+msgstr ""
+
+#: templates/macros/search.html:43
+msgid "Descending"
+msgstr ""
+
+#: templates/macros/search.html:53
+msgid "Export"
+msgstr ""
+
+#: templates/macros/search.html:122 templates/macros/search.html:160
+msgid "More results…"
+msgstr ""
+
+#: templates/macros/search.html:201
+#, python-format
+msgid "Results %(start)s to %(end)s on %(total)s found"
+msgstr ""
+
+#: templates/macros/search.html:216
+msgid "No result found"
+msgstr ""
+
+#: templates/macros/uploader.html:8
+msgid "Drag a file here"
+msgstr ""
+
+#: templates/macros/uploader.html:11
+msgid "or"
+msgstr ""
+
+#: templates/macros/uploader.html:15
+msgid "Select a file from your computer"
+msgstr ""
+
+#: templates/mail/account_deleted.html:4
+msgid "Your account has now been deleted"
+msgstr ""
+
+#: templates/mail/badge_added_certified.html:6
+#, python-format
+msgid "%(user)s has certified your organization \"%(name)s\""
+msgstr ""
+
+#: templates/mail/badge_added_certified.html:27
+#: templates/mail/badge_added_public_service.html:27
+msgid "See the badge"
+msgstr ""
+
+#: templates/mail/badge_added_public_service.html:6
+#, python-format
+msgid "%(user)s has identified your organization \"%(name)s\" as public service"
 msgstr ""
 
 #: templates/mail/base.html:45
@@ -277,11 +1201,844 @@ msgstr ""
 msgid "The %(site)s team"
 msgstr ""
 
+#: templates/mail/discussion_closed.html:6
+#, python-format
+msgid "%(user)s closed an discussion on your %(type)s %(subject)s"
+msgstr ""
+
+#: templates/mail/discussion_closed.html:31 templates/mail/issue_closed.html:31
+#: templates/mail/new_discussion.html:30
+#: templates/mail/new_discussion_comment.html:31 templates/mail/new_issue.html:29
+#: templates/mail/new_issue_comment.html:31
+msgid "Message"
+msgstr ""
+
+#: templates/mail/discussion_closed.html:40 templates/mail/new_discussion.html:38
+#: templates/mail/new_discussion_comment.html:39
+msgid "See the discussion"
+msgstr ""
+
+#: templates/mail/frequency_reminder.html:6
+msgid "Some of your datasets need to be updated according to the frequency you set:"
+msgstr ""
+
+#: templates/mail/frequency_reminder.html:12
+#, python-format
+msgid "Dataset \"%(dataset_title)s\" last update is on %(published_date)s."
+msgstr ""
+
+#: templates/mail/frequency_reminder.html:17
+#, python-format
+msgid ""
+"Given the set frequency (%(dataset_frequency)s) update was due "
+"%(due_update_days)s days ago."
+msgstr ""
+
+#: templates/mail/frequency_reminder.html:25
+msgid "Update the dataset and associated resources"
+msgstr ""
+
+#: templates/mail/issue_closed.html:6
+#, python-format
+msgid "%(user)s closed an issue on your %(type)s %(subject)s"
+msgstr ""
+
+#: templates/mail/issue_closed.html:40 templates/mail/new_issue.html:36
+#: templates/mail/new_issue_comment.html:39
+msgid "See the issue"
+msgstr ""
+
+#: templates/mail/membership_refused.html:7
+#, python-format
+msgid "Your membership for the organization \"%(org)s\" has been refused"
+msgstr ""
+
+#: templates/mail/membership_refused.html:18
+msgid "Refusal reason"
+msgstr ""
+
+#: templates/mail/membership_request.html:8
+#, python-format
+msgid ""
+"As an administrator of \"%(org)s\" you are being informed than a new "
+"membership request from %(user)s is pending for validation"
+msgstr ""
+
+#: templates/mail/membership_request.html:40
+msgid "See the request"
+msgstr ""
+
+#: templates/mail/new_discussion.html:6
+#, python-format
+msgid "%(user)s submitted a new discussion on your %(type)s %(subject)s"
+msgstr ""
+
+#: templates/mail/new_discussion_comment.html:6
+#, python-format
+msgid "%(user)s commented an discussion on your %(type)s %(subject)s"
+msgstr ""
+
+#: templates/mail/new_follower.html:8
+#, python-format
+msgid "%(user)s followed you"
+msgstr ""
+
+#: templates/mail/new_follower.html:33 templates/mail/new_follower_org.html:40
+msgid "See his profile"
+msgstr ""
+
+#: templates/mail/new_follower_org.html:8
+#, python-format
+msgid "%(user)s followed your organization %(org)s"
+msgstr ""
+
+#: templates/mail/new_issue.html:6
+#, python-format
+msgid "%(user)s submitted a new issue on your %(type)s %(subject)s"
+msgstr ""
+
+#: templates/mail/new_issue_comment.html:6
+#, python-format
+msgid "%(user)s commented an issue on your %(type)s %(subject)s"
+msgstr ""
+
+#: templates/mail/new_member.html:7
+#, python-format
+msgid "Congratulations, you are now a member of the organization \"%(org)s\""
+msgstr ""
+
+#: templates/mail/new_member.html:21
+msgid "See the organization page"
+msgstr ""
+
+#: templates/mail/new_reuse.html:7
+#, python-format
+msgid "A new reuse of your dataset %(dataset)s has been published"
+msgstr ""
+
+#: templates/mail/new_reuse.html:31 templates/reuse/display.html:74
+#: templates/reuse/display.html:130
+msgid "See the reuse"
+msgstr ""
+
+#: templates/mail/new_reuse.html:37
+msgid "See on the dataset page"
+msgstr ""
+
+#: templates/mail/test.html:4
+msgid "This is a test mail"
+msgstr ""
+
+#: templates/mail/test.html:5
+msgid "If you read this, your mail configuration is working"
+msgstr ""
+
+#: templates/mail/security/change_notice.html:6
+msgid "Your password has been changed."
+msgstr ""
+
+#: templates/mail/security/change_notice.html:10
+msgid "If you did not change your password, click below to reset it."
+msgstr ""
+
+#: templates/mail/security/change_notice.html:15
+msgid "Reset password"
+msgstr ""
+
+#: templates/mail/security/confirmation_instructions.html:6
+msgid "Please confirm your email through the link below:"
+msgstr ""
+
+#: templates/mail/security/confirmation_instructions.html:14
+msgid "Confirm my account"
+msgstr ""
+
+#: templates/mail/security/login_instructions.html:6
+msgid "You can log into your account through the link below:"
+msgstr ""
+
+#: templates/mail/security/login_instructions.html:13
+msgid "Login now"
+msgstr ""
+
+#: templates/mail/security/reset_instructions.html:7
+#, python-format
+msgid ""
+"Someone has requested a password reset for your %(site)s account. If you "
+"didn't, please ignore this email."
+msgstr ""
+
+#: templates/mail/security/reset_instructions.html:10
+msgid "To reset your password, please confirm your request through the link below:"
+msgstr ""
+
+#: templates/mail/security/reset_instructions.html:18
+msgid "Reset my password"
+msgstr ""
+
+#: templates/mail/security/reset_notice.html:7
+#, python-format
+msgid "Your password for %(site)s has been reset."
+msgstr ""
+
+#: templates/mail/security/welcome.html:7
+#, python-format
+msgid "Welcome to %(site)s!"
+msgstr ""
+
+#: templates/mail/security/welcome.html:10
+msgid ""
+"To activate your account, please confirm your email address through the link "
+"below:"
+msgstr ""
+
+#: templates/mail/security/welcome.html:18
+msgid "Confirm now"
+msgstr ""
+
+#: templates/organization/card.html:19 templates/organization/search-result.html:22
+msgid "Number of datasets"
+msgstr ""
+
+#: templates/organization/card.html:25
+msgid "Number of reuses"
+msgstr ""
+
+#: templates/organization/display.html:11
+msgid "organization"
+msgstr ""
+
+#: templates/organization/display.html:28
+msgid ""
+"This organization has been deleted. This will be permanent in the next 24 "
+"hours"
+msgstr ""
+
+#: templates/organization/display.html:62 templates/organization/display.html:112
+#: templates/reuse/list.html:45
+msgid "@@Réutilisations"
+msgstr ""
+
+#: templates/organization/display.html:131
+msgid "@@Membres"
+msgstr ""
+
+#: templates/organization/display.html:147
+msgid "@@Informations techniques"
+msgstr ""
+
+#: templates/organization/display.html:154
+msgid "@@Date de création"
+msgstr ""
+
+#: templates/organization/display.html:158
+msgid "@@Date de mise à jour"
+msgstr ""
+
+#: templates/organization/display.html:164 templates/post/display.html:91
+#: templates/reuse/display.html:156
+msgid "@@Actions"
+msgstr ""
+
+#: templates/organization/display.html:173
+msgid ""
+"@@Télécharger\n"
+"                                la liste des jeux de données en .csv"
+msgstr ""
+
+#: templates/organization/list.html:9
+#, python-format
+msgid "%(site)s organization search"
+msgstr ""
+
+#: templates/organization/list.html:10
+msgid "organizations"
+msgstr ""
+
+#: templates/organization/list.html:19 templates/post/list.html:16
+#: templates/reuse/list.html:17 templates/topic/datasets.html:21
+#: templates/topic/reuses.html:21 templates/user/list.html:19
+#, python-format
+msgid "%(start)s to %(end)s on %(total)s"
+msgstr ""
+
+#: templates/organization/list.html:44
+msgid "@@Organizations"
+msgstr ""
+
+#: templates/organization/producer-panel.html:16
+#: templates/organization/producer-panel.html:17
+#: templates/organization/sidebar-producer.html:27
+#: templates/user/sidebar-user.html:20
+msgid "View Profile"
+msgstr ""
+
+#: templates/organization/search-result.html:28
+msgid "Number of reuses by the organization"
+msgstr ""
+
+#: templates/organization/search-result.html:34
+msgid "Number of followers"
+msgstr ""
+
+#: templates/organization/search-result.html:39
+msgid "Number of members"
+msgstr ""
+
+#: templates/organization/search-result.html:41
+#, python-format
+msgid "%(num)d members"
+msgid_plural "%(num)d members"
+msgstr[0] ""
+msgstr[1] ""
+
 #: templates/organization/sidebar-producer.html:3
 msgid "The identity of this public service public is certified by Etalab"
 msgstr ""
 
 #: templates/organization/sidebar-producer.html:4
 msgid "Certified public service"
+msgstr ""
+
+#: templates/organization/sidebar-producer.html:34
+#: templates/user/sidebar-user.html:26
+msgid "Contact"
+msgstr ""
+
+#: templates/organization/sidebar-producer.html:39
+msgid "I'll be informed about this organization news"
+msgstr ""
+
+#: templates/participez/participez.html:5
+msgid "@@Participez"
+msgstr ""
+
+#: templates/participez/participez.html:11
+msgid "@@Accéder à la documentation"
+msgstr ""
+
+#: templates/post/display.html:27 templates/reuse/card_old.html:41
+#, python-format
+msgid "Published on %(date)s"
+msgstr ""
+
+#: templates/post/display.html:31
+msgid "This post is a draft and will not be visible by other users"
+msgstr ""
+
+#: templates/post/display.html:36
+msgid "This post has been deleted. This will be permanent in the next 24 hours"
+msgstr ""
+
+#: templates/post/display.html:107 templates/post/display.html:111
+msgid "Previous post"
+msgstr ""
+
+#: templates/post/display.html:117
+msgid "All posts"
+msgstr ""
+
+#: templates/post/display.html:122 templates/post/display.html:123
+msgid "Next post"
+msgstr ""
+
+#: templates/post/list.html:5 templates/post/list.html:15
+#: templates/post/list.html:25
+msgid "Posts"
+msgstr ""
+
+#: templates/post/list.html:6
+#, python-format
+msgid "%(site)s posts"
+msgstr ""
+
+#: templates/post/list.html:7
+msgid "posts"
+msgstr ""
+
+#: templates/post/list.html:29
+msgid ""
+"@@Pour ne rien manquer, de l’actualité de data.gouv.fr et de l’open data, "
+"inscrivez-vous à"
+msgstr ""
+
+#: templates/post/list.html:30
+msgid "@@Subscribe"
+msgstr ""
+
+#: templates/post/list.html:32
+msgid "@@notre infolettre."
+msgstr ""
+
+#: templates/post/search-result.html:8
+msgid "@@Publié le"
+msgstr ""
+
+#: templates/post/subnav.html:39
+msgid "Read more"
+msgstr ""
+
+#: templates/reuse/card.html:16
+msgid "@@jeux de données"
+msgstr ""
+
+#: templates/reuse/card_old.html:27 templates/reuse/search-labels.html:6
+#: templates/reuse/search-panel.html:6
+msgid "Type"
+msgstr ""
+
+#: templates/reuse/card_old.html:31
+msgid "Number of datasets used"
+msgstr ""
+
+#: templates/reuse/card_old.html:48
+#, python-format
+msgid "Created by %(user)s"
+msgstr ""
+
+#: templates/reuse/display.html:11
+msgid "reuse"
+msgstr ""
+
+#: templates/reuse/display.html:41
+msgid "This reuse is private and will not be visible by other users"
+msgstr ""
+
+#: templates/reuse/display.html:47
+msgid "This reuse has been deleted. This will be permanent in the next 24 hours"
+msgstr ""
+
+#: templates/reuse/display.html:63
+#, python-format
+msgid "Published on %(date)s by %(user)s"
+msgstr ""
+
+#: templates/reuse/display.html:84
+msgid "@@Réutilisateur"
+msgstr ""
+
+#: templates/reuse/display.html:86 templates/reuse/display.html:110
+msgid "@@Mots clés"
+msgstr ""
+
+#: templates/reuse/display.html:101
+msgid "@@Informations"
+msgstr ""
+
+#: templates/reuse/display.html:137
+msgid "Used datasets"
+msgstr ""
+
+#: templates/reuse/display.html:171
+msgid "@@Embed"
+msgstr ""
+
+#: templates/reuse/display.html:195
+msgid "@@Plus de réutilisations"
+msgstr ""
+
+#: templates/reuse/list.html:7
+#, python-format
+msgid "%(site)s reuse search"
+msgstr ""
+
+#: templates/reuse/list.html:8 templates/topic/reuses.html:9
+msgid "reuses"
+msgstr ""
+
+#: templates/reuse/list.html:26
+msgid "Paper"
+msgstr ""
+
+#: templates/reuse/list.html:27
+msgid "Post"
+msgstr ""
+
+#: templates/reuse/list.html:28
+msgid "Visualization"
+msgstr ""
+
+#: templates/reuse/list.html:29
+msgid "Api"
+msgstr ""
+
+#: templates/reuse/list.html:30
+msgid "Hardware"
+msgstr ""
+
+#: templates/reuse/list.html:31
+msgid "News article"
+msgstr ""
+
+#: templates/reuse/list.html:32
+msgid "Application"
+msgstr ""
+
+#: templates/reuse/list.html:33
+msgid "Idea"
+msgstr ""
+
+#: templates/reuse/list.html:47
+msgid "@@Rechercher dans les jeux de données"
+msgstr ""
+
+#: templates/reuse/list.html:52
+msgid "@@Tout"
+msgstr ""
+
+#: templates/security/change_password.html:11
+#: templates/security/forgot_password.html:11 templates/security/login_user.html:11
+#: templates/security/register_user.html:11
+#: templates/security/reset_password.html:12
+msgid "@@Connectez-vous"
+msgstr ""
+
+#: templates/security/change_password.html:13
+msgid ""
+"Forgotten your password? Enter your email address below, and we'll email "
+"instructions\n"
+"                            for setting a new one."
+msgstr ""
+
+#: templates/security/change_password.html:16
+msgid "Change Password"
+msgstr ""
+
+#: templates/security/forgot_password.html:13
+msgid ""
+"Forgotten your password? Enter your email address below, and we'll email "
+"instructions\n"
+"                            for setting a\n"
+"                            new one."
+msgstr ""
+
+#: templates/security/forgot_password.html:17
+#: templates/security/reset_password.html:17
+msgid "Reset Password"
+msgstr ""
+
+#: templates/security/login_user.html:16
+msgid "Sign In"
+msgstr ""
+
+#: templates/security/login_user.html:19
+msgid "Forgot your password?"
+msgstr ""
+
+#: templates/security/login_user.html:21
+msgid "Recover your password"
+msgstr ""
+
+#: templates/security/login_user.html:26
+msgid "Confirmation instructions not received?"
+msgstr ""
+
+#: templates/security/login_user.html:28
+msgid "Send the instructions again"
+msgstr ""
+
+#: templates/security/login_user.html:41
+msgid "@@Vous n'avez pas de compte ?"
+msgstr ""
+
+#: templates/security/login_user.html:43
+msgid "Register"
+msgstr ""
+
+#: templates/security/login_user.html:45
+msgid "Create an account"
+msgstr ""
+
+#: templates/security/register_user.html:22
+#, python-format
+msgid ""
+"I have read and accept <a href=\"%(url)s\"> the terms and conditions of the "
+"service.</a>"
+msgstr ""
+
+#: templates/security/register_user.html:25
+msgid "Sign up"
+msgstr ""
+
+#: templates/security/send_confirmation.html:11
+msgid "Resend confirmation instructions"
+msgstr ""
+
+#: templates/security/send_confirmation.html:16
+msgid "Submit"
+msgstr ""
+
+#: templates/site/dashboard.html:4 templates/site/dashboard.html:14
+msgid "Dashboard"
+msgstr ""
+
+#: templates/site/dashboard.html:5
+msgid "Site metrics and activity"
+msgstr ""
+
+#: templates/site/dashboard.html:6
+msgid "activity"
+msgstr ""
+
+#: templates/site/dashboard.html:47
+msgid "Community activity"
+msgstr ""
+
+#: templates/site/map.html:5 templates/site/map.html:13
+msgid "Coverage map"
+msgstr ""
+
+#: templates/site/map.html:6
+msgid "Display datasets on a map"
+msgstr ""
+
+#: templates/site/map.html:7
+msgid "coverage"
+msgstr ""
+
+#: templates/site/map.html:7
+msgid "map"
+msgstr ""
+
+#: templates/territories/commune.html:5
+#, python-format
+msgid ""
+"Datasets related to the town of %(name)s with INSEE code %(code)s and postal "
+"code %(postal)s"
+msgstr ""
+
+#: templates/territories/commune.html:12 templates/territories/departement.html:12
+#: templates/territories/region.html:12
+msgid "Region:"
+msgstr ""
+
+#: templates/territories/commune.html:13 templates/territories/departement.html:13
+msgid "County:"
+msgstr ""
+
+#: templates/territories/commune.html:14
+msgid "Town:"
+msgstr ""
+
+#: templates/territories/commune.html:22 templates/territories/departement.html:21
+#: templates/territories/region.html:20
+msgid "Source:"
+msgstr ""
+
+#: templates/territories/commune.html:29 templates/territories/departement.html:28
+#: templates/territories/region.html:27
+msgid "Submit your logo through:"
+msgstr ""
+
+#: templates/territories/commune.html:30 templates/territories/departement.html:29
+#: templates/territories/region.html:28
+msgid "we only expose logos under an open license"
+msgstr ""
+
+#: templates/territories/commune.html:40 templates/territories/departement.html:39
+#: templates/territories/region.html:38 templates/territories/search-result.html:13
+msgid "INSEE code:"
+msgstr ""
+
+#: templates/territories/commune.html:46 templates/territories/region.html:44
+#: templates/territories/search-result.html:15
+msgid "Postal code:"
+msgstr ""
+
+#: templates/territories/commune.html:53 templates/territories/departement.html:45
+#: templates/territories/region.html:51
+msgid "Population:"
+msgstr ""
+
+#: templates/territories/departement.html:5
+#, python-format
+msgid "Datasets related to the county of %(name)s with INSEE code %(code)s"
+msgstr ""
+
+#: templates/territories/departement.html:50
+msgid "Main towns:"
+msgstr ""
+
+#: templates/territories/home.html:5 templates/territories/home.html:6
+msgid "French regions"
+msgstr ""
+
+#: templates/territories/home.html:14
+msgid "Click to navigate to the given region:"
+msgstr ""
+
+#: templates/territories/home.html:16
+msgid "Or sorted alphabetically:"
+msgstr ""
+
+#: templates/territories/region.html:5
+#, python-format
+msgid "Datasets related to the region of %(name)s with INSEE code %(code)s"
+msgstr ""
+
+#: templates/territories/region.html:57
+msgid "Previously:"
+msgstr ""
+
+#: templates/territories/region.html:64
+msgid "Counties:"
+msgstr ""
+
+#: templates/territories/search-result.html:22
+msgid "Administrative level"
+msgstr ""
+
+#: templates/territories/search-result.html:30
+msgid "Population"
+msgstr ""
+
+#: templates/territories/territory.html:17
+msgid "This territory has been replaced by:"
+msgstr ""
+
+#: templates/territories/territory.html:19
+msgid "since"
+msgstr ""
+
+#: templates/territories/territory.html:32
+#, python-format
+msgid ""
+"If you want your datasets to appear in that list, the geographical zone "
+"associated must be the exact same one of that territory (%(code)s)."
+msgstr ""
+
+#: templates/territories/territory.html:34
+msgid "You want to add your own datasets to that list?"
+msgstr ""
+
+#: templates/territories/territory.html:37
+msgid "Log in"
+msgstr ""
+
+#: templates/territories/territory.html:38
+msgid "and create resources for that territory."
+msgstr ""
+
+#: templates/topic/browse.html:34 templates/topic/browse.html:54
+#, python-format
+msgid "See the %(total)s results"
+msgstr ""
+
+#: templates/topic/datasets.html:7
+#, python-format
+msgid "%(topic)s datasets"
+msgstr ""
+
+#: templates/topic/datasets.html:8
+#, python-format
+msgid "%(site)s %(topic)s related datasets"
+msgstr ""
+
+#: templates/topic/datasets.html:9 templates/topic/display_base.html:7
+#: templates/topic/reuses.html:9
+msgid "topic"
+msgstr ""
+
+#: templates/topic/reuses.html:7
+#, python-format
+msgid "%(topic)s reuses"
+msgstr ""
+
+#: templates/topic/reuses.html:8
+#, python-format
+msgid "%(site)s %(topic)s related reuses"
+msgstr ""
+
+#: templates/user/activity.html:5 templates/user/base.html:62
+msgid "Activity"
+msgstr ""
+
+#: templates/user/base.html:8
+#, python-format
+msgid "%(site)s %(username)s profile"
+msgstr ""
+
+#: templates/user/base.html:9
+msgid "user"
+msgstr ""
+
+#: templates/user/base.html:9
+msgid "profile"
+msgstr ""
+
+#: templates/user/base.html:73
+#, python-format
+msgid "%(num)d followed"
+msgid_plural "%(num)d followed"
+msgstr[0] ""
+msgstr[1] ""
+
+#: templates/user/datasets.html:36
+#, python-format
+msgid "%(user)s has not yet published any dataset"
+msgstr ""
+
+#: templates/user/followers.html:31
+#, python-format
+msgid "%(user)s has no follower"
+msgstr ""
+
+#: templates/user/following.html:7
+msgid "Following"
+msgstr ""
+
+#: templates/user/following.html:41
+#, python-format
+msgid "Follow %(num)d dataset"
+msgid_plural "Follow %(num)d datasets"
+msgstr[0] ""
+msgstr[1] ""
+
+#: templates/user/following.html:61
+#, python-format
+msgid "Follow %(num)d reuse"
+msgid_plural "Follow %(num)d reuses"
+msgstr[0] ""
+msgstr[1] ""
+
+#: templates/user/following.html:81
+#, python-format
+msgid "Follow %(num)d organization"
+msgid_plural "Follow %(num)d organizations"
+msgstr[0] ""
+msgstr[1] ""
+
+#: templates/user/following.html:101
+#, python-format
+msgid "Follow %(num)d user"
+msgid_plural "Follow %(num)d users"
+msgstr[0] ""
+msgstr[1] ""
+
+#: templates/user/following.html:127
+#, python-format
+msgid "%(user)s is not following anyone"
+msgstr ""
+
+#: templates/user/list.html:9
+#, python-format
+msgid "%(site)s user search"
+msgstr ""
+
+#: templates/user/list.html:10
+msgid "users"
+msgstr ""
+
+#: templates/user/list.html:30
+msgid "Last name"
+msgstr ""
+
+#: templates/user/reuses.html:35
+#, python-format
+msgid "%(user)s has not yet published any reuse"
+msgstr ""
+
+#: templates/user/sidebar-user.html:31
+msgid "I'll be informed about this user news"
 msgstr ""
 

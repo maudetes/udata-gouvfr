@@ -14,10 +14,10 @@ for pofile in [
         if entry.msgid.find("@@") == 0:
             newpo.append(
                 polib.POEntry(
-                    msgid=entry.msgid,
+                    msgid=entry.msgid[2:],
                     msgstr=entry.msgstr,
                     occurrences=entry.occurrences
                 )
             )
 
-    newpo.save(pofile + ".@@")
+    newpo.save(".".join(pofile.split(".")[:-1]) + "@@.pot")
