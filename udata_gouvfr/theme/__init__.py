@@ -18,14 +18,6 @@ log = logging.getLogger(__name__)
 
 themes = Themes()
 
-footer_support_links = [
-    nav.Item(_("Platform's documentation"), None, url='https://doc.data.gouv.fr'),
-    nav.Item(_('Open data guides'), None, url='https://guides.etalab.gouv.fr'),
-    nav.Item(_('Support'), None, url='https://support.data.gouv.fr/')
-]
-
-nav.Bar('support_network', footer_support_links)
-
 
 def get_current_theme():
     if getattr(g, 'theme', None) is None:
@@ -135,7 +127,6 @@ def themes_loader(app):
 def render(template, **context):
     '''
     Render a template with uData frontend specifics
-
         * Theme
     '''
     theme = current_app.config['THEME']
