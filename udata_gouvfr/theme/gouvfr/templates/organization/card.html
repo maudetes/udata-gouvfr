@@ -3,7 +3,7 @@
 
 {# This is very similar to the dataset card and not very used so we're recycling the dataset-card class for a quick win #}
 <a class="card organization-card dataset-card unstyled" title="{{organization.name}}"
-    href="{{ url_for('organizations.show', org=organization, _external=True) }}">
+    href="{{ url_for('organizations.show', org=organization, _external=True) }}" v-pre>
     <div class="card-logo">
         <img src="{{ organization.logo(100, external=True)|placeholder('organization', external=True) }}"
             alt="{{ organization.name }}" />
@@ -11,7 +11,7 @@
             {{ badge_if_certified(organization) }}
         </div>
     </div>
-    <div class="card-data">
+    <div class="card-data" v-pre>
         <h4 class="card-body">
             {{ organization.name }}
         </h4>

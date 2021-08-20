@@ -44,7 +44,8 @@
 ) }}
 
 <section
-    class="content container overflow-visible {% if not dataset.organization.public_service %}non{% endif %}certified {% if dataset.archived %}archived{% endif %}">
+    class="content container overflow-visible {% if not dataset.organization.public_service %}non{% endif %}certified {% if dataset.archived %}archived{% endif %}"
+    v-pre>
     {% if dataset.private %}
     <span class="big tag"
         title="{{ _('This dataset is private and will not be visible by other users') }}">{{ _('Private') }}
@@ -248,7 +249,7 @@
 </section>
 <section class="content-body container">
     <div class="row">
-        <div class="col-12 text-grey-300">
+        <div class="col-12 text-grey-300" v-pre>
             {{ dataset.description|markdown }}
         </div>
     </div>

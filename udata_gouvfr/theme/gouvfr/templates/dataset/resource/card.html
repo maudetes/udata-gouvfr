@@ -56,7 +56,7 @@
             {% if expanded == 'false' %}style="height: 0px" {% endif %}
             aria-labelledby="resource-{{resource.id}}-header" id="resource-{{resource.id}}">
             {% if resource.description %}
-            <div class="resource-description">
+            <div class="resource-description" v-pre>
                 {{ resource.description|markdown }}
             </div>
             {% endif %}

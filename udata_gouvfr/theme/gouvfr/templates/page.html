@@ -16,7 +16,7 @@
 </div>
 
 {% if datasets %}
-<div class="container mt-md">
+<div class="container mt-md" v-pre>
     <h2>{{ _('Datasets') }} <sup>{{ datasets|length }}</sup></h2>
     <div class="row">
         <div class="col-12">
@@ -31,7 +31,7 @@
 {% endif %}
 
 {% if reuses %}
-<div class="container mt-md">
+<div class="container mt-md" v-pre>
     <h2>{{ _('Reuses') }} <sup>{{ reuses|length }}</sup></h2>
     <ul class="row">
         {% for reuse in reuses %}

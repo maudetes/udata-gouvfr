@@ -2,7 +2,7 @@
 {% set features = features or [] %}
 <a class="card reuse-card {% if 'preview' in features %}card--with-cover{% endif %}"
     href="{{ url_for('reuses.show', reuse=reuse, _external=True) }}"
-    title="{{ reuse.title }}">
+    title="{{ reuse.title }}" v-pre>
     {% if 'preview' in features %}
     <div class="card-cover">
         <img class="media-object img-responsive" alt="{{ reuse.title }}"
