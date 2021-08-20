@@ -1,11 +1,11 @@
 <template>
   <div class="thread-reply">
-    <strong class="fs-sm">{{ $t("Reply to the discussion") }}</strong>
+    <strong class="fs-sm"><span v-text='$t("Reply to the discussion")'></span></strong>
     <form @submit.prevent="submit" class="my-sm">
       <textarea v-model="comment" :placeholder="$t('Comment')" />
       <footer class="row-inline justify-between align-items-center">
         <span class="text-grey-300 fs-sm">
-          {{ $t("Reply as") }}
+          <span v-text='$t("Reply as")'></span>
           <Author :author="user" />
         </span>
         <input

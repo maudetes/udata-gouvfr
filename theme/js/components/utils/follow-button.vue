@@ -27,7 +27,7 @@ The `url` prop is the API URL.
       />
     </span>
     <strong class="text-orange-100 ml-sm"
-      >{{ _followers }} {{ $tc("favourites", _followers) }}</strong
+      ><span v-text='_followers'></span> <span v-text='$tc("favourites", _followers)'></span></strong
     >
   </a>
 </template>

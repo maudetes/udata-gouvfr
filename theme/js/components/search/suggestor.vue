@@ -53,10 +53,10 @@ Simply provide the many necessary props :
     <template v-slot:multiplelabel="{ values }">
       <div class="suggestor-labels" v-if="!opened">
         <div class="multiselect-tag" v-if="values.length >= 1">
-          {{ values[0].label }}
+          <span v-text='values[0].label'></span>
         </div>
         <div class="multiselect-tag more" v-if="values.length > 1">
-          + {{ values.length - 1 }}
+          + <span v-text='values.length - 1'></span>
         </div>
       </div>
       <div v-else />
@@ -64,7 +64,7 @@ Simply provide the many necessary props :
     <template v-slot:beforelist v-if="value.length">
       <div class="suggestor-search-labels is-opened">
         <div class="multiselect-tag" v-for="v in value">
-          <span>{{ v.label }}</span>
+          <span><span v-text='v.label'></span></span>
           <i @mousedown.prevent.stop="deselect(v)"></i>
         </div>
       </div>

@@ -25,41 +25,41 @@ Vue. -->
       <Placeholder type="dataset" />
     </div>
     <div class="card-data">
-      <h4 class="card-title">{{ title }}</h4>
+      <h4 class="card-title"><span v-text='title'></span></h4>
       <div class="card-description text-grey-300 mt-xs">
-        {{ $filters.excerpt(description) }}
+        <span v-text='$filters.excerpt(description)'></span>
       </div>
     </div>
     <dl class="card-hover">
       <div v-if="temporal_coverage">
-        <dt>{{ $t("Temporal coverage") }}</dt>
-        <dd>{{ Object.values(temporal_coverage).join(" - ") }}</dd>
+        <dt><span v-text='$t("Temporal coverage")'></span></dt>
+        <dd><span v-text='Object.values(temporal_coverage).join(" - ")'></span></dd>
       </div>
       <div v-if="frequency">
-        <dt>{{ $t("Frequency") }}</dt>
-        <dd>{{ frequency }}</dd>
+        <dt><span v-text='$t("Frequency")'></span></dt>
+        <dd><span v-text='frequency'></span></dd>
       </div>
       <div v-if="geozone">
-        <dt>{{ $t("Spatial coverage") }}</dt>
-        <dd>{{ geozone.join(", ") }}</dd>
+        <dt><span v-text='$t("Spatial coverage")'></span></dt>
+        <dd><span v-text='geozone.join(", ")'></span></dd>
       </div>
       <div v-if="spatial?.granularity">
-        <dt>{{ $t("Territorial coverage granularity") }}</dt>
-        <dd>{{ spatial.granularity }}</dd>
+        <dt><span v-text='$t("Territorial coverage granularity")'></span></dt>
+        <dd><span v-text='spatial.granularity'></span></dd>
       </div>
     </dl>
     <ul class="card-footer">
       <li>
-        <strong>{{ resources.length || 0 }}</strong>
-        {{ $tc("resources", resources.length || 0) }}
+        <strong><span v-text='resources.length || 0'></span></strong>
+        <span v-text='$tc("resources", resources.length || 0)'></span>
       </li>
       <li>
-        <strong>{{ metrics.reuses || 0 }}</strong>
-        {{ $tc("reuses", metrics.reuses || 0) }}
+        <strong><span v-text='metrics.reuses || 0'></span></strong>
+        <span v-text='$tc("reuses", metrics.reuses || 0)'></span>
       </li>
       <li>
-        <strong>{{ metrics.followers || 0 }}</strong>
-        {{ $tc("favourites", metrics.followers || 0) }}
+        <strong><span v-text='metrics.followers || 0'></span></strong>
+        <span v-text='$tc("favourites", metrics.followers || 0)'></span>
       </li>
     </ul>
   </article>

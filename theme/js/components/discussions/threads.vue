@@ -23,12 +23,12 @@
           <a
             class="nav-link text-white mt-xl"
             @click.prevent="viewAllDiscussions"
-            >{{ $t("See all discussions about this dataset") }}</a
+            ><span v-text='$t("See all discussions about this dataset")'></span></a
           >
         </div>
         <div v-else>
           <div class="row-inline justify-end align-items-center">
-            {{ $t("Sort by:") }}
+            <span v-text='$t("Sort by:")'></span>
             <div class="dropdown btn-secondary-white ml-md">
               <select
                 name="sortBy"
@@ -42,7 +42,7 @@
                   :value="sort"
                   :selected="sort === current_sort"
                 >
-                  {{ sort.name }}
+                  <span v-text='sort.name'></span>
                 </option>
               </select>
             </div>

@@ -3,8 +3,8 @@
     <div class="modal-body markdown">
       <h2>Schéma associé</h2>
       <p>
-        <span>Cette ressource est associée au schéma <b>{{ resource_schema.name }}</b></span>
-        <span v-if="resource_schema.version">, version {{ resource_schema.version }},</span>
+        <span>Cette ressource est associée au schéma <b><span v-text='resource_schema.name'></span></b></span>
+        <span v-if="resource_schema.version">, version <span v-text='resource_schema.version'></span>,</span>
        <span> ce qui signifie que le producteur a déclaré qu'elle en respectait la spécification.</span>
       </p>
 

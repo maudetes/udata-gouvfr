@@ -7,11 +7,11 @@
       tabindex="0"
     >
       <span v-html="AddIcon"></span>
-      <span>{{ $t("Start a new discussion") }}</span>
+      <span><span v-text='$t("Start a new discussion")'></span></span>
     </a>
     <div v-if="showForm" class="thread-wrapper">
       <div class="thread-header">
-        <div class="thread-title">{{ $t("New discussion") }}</div>
+        <div class="thread-title"><span v-text='$t("New discussion")'></span></div>
       </div>
       <div class="thread-comment">
         <form @submit.prevent="submit">
@@ -38,7 +38,7 @@
           />
           <footer class="row-inline justify-between align-items-center">
             <span class="text-grey-300 fs-sm">
-              {{ $t("Comment as") }}
+              <span v-text='$t("Comment as")'></span>
               <Author :author="user" />
             </span>
             <input

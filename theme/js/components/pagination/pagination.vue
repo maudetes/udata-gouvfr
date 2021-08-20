@@ -80,7 +80,7 @@ export default {
         :aria-current="page === index ? 'page' : false"
         @click.prevent="_onClick(index)"
         v-if="index"
-        >{{ index }}</a
+        ><span v-text='index'></span></a
       >
       <span class="ellipsis" role="img" aria-label="ellipsis" v-else>...</span>
     </li>
@@ -89,7 +89,7 @@ export default {
         :class="{ active: page === pages.length }"
         :aria-disabled="page === pages.length"
         @click.prevent="_onClick(pages.length)"
-        >{{ pages.length }}</a
+        ><span v-text='pages.length'></span></a
       >
     </li>
     <li>

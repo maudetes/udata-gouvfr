@@ -9,7 +9,7 @@
     </div>
     <div class="card-data">
       <h4 class="card-body">
-        {{ title }}
+        <span v-text='title'></span>
       </h4>
       <div class="card-footer">
         <ul class="card-features fs-xs"></ul>

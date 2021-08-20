@@ -20,7 +20,7 @@ Used by the suggest feature to display typeahead-style results when you type you
         :title="$t('Search all datasets')"
       >
         <h2>
-          {{ $t("Datasets") }}
+          <span v-text='$t("Datasets")'></span>
         </h2>
         <span v-html="arrow" />
       </a>
@@ -61,7 +61,7 @@ Used by the suggest feature to display typeahead-style results when you type you
         :title="$t('Search in reuses')"
       >
         <h2>
-          {{ $t("Reuses") }}
+          <span v-text='$t("Reuses")'></span>
         </h2>
         <span v-html="arrow" />
       </a>

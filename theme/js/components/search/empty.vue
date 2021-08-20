@@ -10,15 +10,15 @@ Nothing to see here ! Well actually it's a small component that says this.
     <div :class="{ 'pr-lg': wide }" v-html="Empty" />
     <div :class="{ 'mt-lg': !wide }">
       <h4>
-        {{ $t("There are no results for your search") }}
+        <span v-text='$t("There are no results for your search")'></span>
       </h4>
       <p>
-        {{ copy }}
+        <span v-text='copy'></span>
         <span v-if="queryString">{{ `"${queryString}"` }}</span>
       </p>
-      <p v-if="copyAfter">{{ copyAfter }}</p>
-      <a class="nav-link mt-md" @click="onClick" v-if="onClick">{{ cta }}</a>
-      <a class="nav-link mt-md" :href="link" v-else>{{ cta }}</a>
+      <p v-if="copyAfter"><span v-text='copyAfter'></span></p>
+      <a class="nav-link mt-md" @click="onClick" v-if="onClick"><span v-text='cta'></span></a>
+      <a class="nav-link mt-md" :href="link" v-else><span v-text='cta'></span></a>
     </div>
   </div>
 </template>

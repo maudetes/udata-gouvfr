@@ -18,7 +18,7 @@ d1.yyyy-d1.mm-d1.dd-d2.yyyy-d2.mm-d2.dd
 <template>
   <div class="rangepicker row-inline w-100 justify-between">
     <div class="row-inline align-items-center">
-      <strong class="text-grey-300 f-normal mr-xxs">{{ $t("from") }}</strong>
+      <strong class="text-grey-300 f-normal mr-xxs"><span v-text='$t("from")'></span></strong>
       <div class="datepicker">
         <Datepicker
           v-model="dateRange.start"

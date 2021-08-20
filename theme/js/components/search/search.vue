@@ -16,15 +16,15 @@
   </div>
   <div class="row-inline mt-sm justify-between align-items-center">
     <h1 class="m-0 h2">
-      {{ $t("Datasets") }}<sup>{{ total_results || 0 }}</sup>
+      <span v-text='$t("Datasets")'></span><sup><span v-text='total_results || 0'></span></sup>
     </h1>
     <a :href="reuseUrl" title="" class="nav-link fs-sm mt-lg-sm hidden-md">
-      {{ $t("Search reuses") }}
+      <span v-text='$t("Search reuses")'></span>
     </a>
   </div>
   <section class="search-filters p-md-md" :class="{ active: extendedForm }">
     <h4 class="mt-md mt-md-0 mb-xs mb-md-md fs-sm">
-      {{ $t("Search filters") }}
+      <span v-text='$t("Search filters")'></span>
     </h4>
     <div class="filters-wrapper p-sm p-md-0">
       <div class="row justify-between align-items-center">
@@ -110,7 +110,7 @@
       <a
         class="btn-secondary btn-secondary-grey-400"
         @click="extendedForm = !extendedForm"
-        >{{ $t("Submit") }}</a
+        ><span v-text='$t("Submit")'></span></a
       >
     </div>
   </section>

@@ -2,9 +2,9 @@
   <div class="thread-wrapper" :id="discussionUrl(id)">
     <header class="thread-header">
       <div class="thread-status" v-if="closed">
-        <span>{{ $t("Discussion closed") }}</span>
+        <span><span v-text='$t("Discussion closed")'></span></span>
       </div>
-      <div class="thread-title">{{ title }}</div>
+      <div class="thread-title"><span v-text='title'></span></div>
       <div class="thread-link">
         <a
           :aria-label="$t('Discussion permalink')"
@@ -27,7 +27,7 @@
             <div>
               <Author :author="comment.posted_by" :badge="false" />
               <div class="text-grey-300 mt-xxs">
-                {{ formatDate(comment.posted_on) }}
+                <span v-text='formatDate(comment.posted_on)'></span>
               </div>
             </div>
             <div class="thread-link">
@@ -39,7 +39,7 @@
             </div>
           </div>
           <div class="thread-box">
-            <p class="m-0">{{ comment.content }}</p>
+            <p class="m-0"><span v-text='comment.content'></span></p>
           </div>
         </article>
       </transition-group>
@@ -48,7 +48,7 @@
         v-if="_collapsed"
         @click.prevent="collapsed = false"
       >
-        {{ _discussion.length }} {{ $t("messages") }}
+        <span v-text='_discussion.length'></span> <span v-text='$t("messages")'></span>
       </article>
     </div>
     <footer class="thread-footer">
@@ -59,7 +59,7 @@
           @click.stop="displayForm"
           tabindex="0"
         >
-          {{ $t("Reply") }}
+          <span v-text='$t("Reply")'></span>
         </a>
         <thread-reply
           :subjectId="id"
@@ -68,9 +68,9 @@
         />
       </div>
       <div v-if="closed" class="text-grey-300">
-        {{ $t("The discussion was closed by") }} &#32;
+        <span v-text='$t("The discussion was closed by")'></span> &#32;
         <span class="text-blue-200 px-xxs"><Author :author="closed_by" /></span>
-        {{ $t("on") }} {{ formatDate(closed) }}
+        <span v-text='$t("on")'></span> <span v-text='formatDate(closed)'></span>
       </div>
     </footer>
   </div>
