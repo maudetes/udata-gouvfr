@@ -397,9 +397,11 @@
                 <p>{{ _('Discussion between the organization and the community about this dataset.') }}</p>
             </div>
         </div>
-        <discussion-threads ref="discussions" subject-id="{{ dataset.id }}"
-            subject-class="{{ dataset.__class__.__name__ }}">
-        </discussion-threads>
+        <div id="discussion-threads">
+            <discussion-threads ref="discussions" subject-id="{{ dataset.id }}"
+                subject-class="{{ dataset.__class__.__name__ }}">
+            </discussion-threads>
+        </div>
     </div>
 </section>
 {% endblock %}

@@ -21,39 +21,30 @@ import filters from "./plugins/filters";
 
 import InitSentry from "./sentry";
 
-const app = createApp({});
+mountComponents = [
+  ["#discussion-threads", "discussion-threads", Threads],
+  ["#header", "suggest", Suggest],
+  ["#search", "search", Search],
+  ["#follow", "follow-button", FollowButton]
+]
 
-// Configure as early as possible in the app's lifecycle
-InitSentry(app);
+for (var comp of mountComponents) {
 
-app.use(Api);
-app.use(Auth);
-app.use(VueFinalModal());
-app.use(Modals); //Has to be loaded after VueFinalModal
-app.use(i18n);
-app.use(bodyClass);
-app.use(filters);
-app.use(Toaster);
+  app = createApp({});
 
-app.component("discussion-threads", Threads);
-app.component("suggest", Suggest);
-app.component("search", Search);
-app.component("follow-button", FollowButton);
+  // Configure as early as possible in the app's lifecycle
+  InitSentry(app);
 
-//We keep the div HTML from before trying to mount the VueJS App
-const previousHtml = document.querySelector("#app").innerHTML;
+  app.use(Api);
+  app.use(Auth);
+  app.use(VueFinalModal());
+  app.use(Modals); //Has to be loaded after VueFinalModal
+  app.use(i18n);
+  app.use(bodyClass);
+  app.use(filters);
+  app.use(Toaster);
 
-try {
-  app.mount("#app");
-} catch (e) {
-  //If the mount wasn't successful, Vue will remove all HTML from the div. We'll put it back so you can use the website.
-  document.querySelector("#app").innerHTML = previousHtml;
-
-  console.log(
-    "VueJS template compilation failed. Aborted the process and rolled back the HTML. See error(s) above and below (probably won't help you tho) :"
-  );
-  console.error(e);
-  throw e;
+  app.component(comp[1], comp[2]);
+  app.mount(comp[0]);
+  console.log("JS is injected for component: " + comp[1]);
 }
-
-console.log("JS is injected !");
